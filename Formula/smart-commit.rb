@@ -2,6 +2,7 @@ class SmartCommit < Formula
   desc "smart-commit is a tool to help you write commit messages using OpenAI API"
   homepage "https://github.com/psakalo/smart-commit"
   url "https://github.com/psakalo/smart-commit/archive/refs/heads/master.tar.gz"
+  version "0.1.0"
   sha256 "" 
 
   depends_on "rust" => :build
