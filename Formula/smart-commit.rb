@@ -9,9 +9,13 @@ class SmartCommit < Formula
   def install
     system "cargo", "build", "--release"
     bin.install "target/release/smart-commit"
+
+    # Install git-smart-commit helper script
+    bin.install "scripts/git-smart-commit"
   end
 
   test do
     system "#{bin}/smart-commit", "--version"
+    system "#{bin}/git-smart-commit", "--version"
   end
 end
